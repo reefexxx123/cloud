@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/auth/auth-example/authe-xample.iml" filepath="$PROJECT_DIR$/auth/auth-example/authe-xample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud.iml" filepath="$PROJECT_DIR$/cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-auth/cloud-auth.iml" filepath="$PROJECT_DIR$/cloud-auth/cloud-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-auth2/cloud-auth (1).iml" filepath="$PROJECT_DIR$/cloud-auth2/cloud-auth (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-starter/cloud-auth-starter/cloud-auth-starter.iml" filepath="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/cloud-auth-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-business/cloud-business.iml" filepath="$PROJECT_DIR$/cloud-business/cloud-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-business/cloud-business-admin/cloud-business-admin.iml" filepath="$PROJECT_DIR$/cloud-business/cloud-business-admin/cloud-business-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-starter/cloud-common-starter/cloud-common-starter.iml" filepath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/cloud-common-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-gateway/cloud-gateway.iml" filepath="$PROJECT_DIR$/cloud-gateway/cloud-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-gen/cloud-gen.iml" filepath="$PROJECT_DIR$/cloud-gen/cloud-gen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-starter/cloud-redis-starter/cloud-redis-starter.iml" filepath="$PROJECT_DIR$/cloud-starter/cloud-redis-starter/cloud-redis-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-starter/cloud-starter.iml" filepath="$PROJECT_DIR$/cloud-starter/cloud-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-starter/cloud-swagger-starter/cloud-swagger-starter.iml" filepath="$PROJECT_DIR$/cloud-starter/cloud-swagger-starter/cloud-swagger-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-uc/cloud-uc.iml" filepath="$PROJECT_DIR$/cloud-uc/cloud-uc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-uc/cloud-uc-api/cloud-uc-api.iml" filepath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/cloud-uc-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-uc/cloud-uc-biz/cloud-uc-biz.iml" filepath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/cloud-uc-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-starter/cloud-security-starter/common-security-starter.iml" filepath="$PROJECT_DIR$/cloud-starter/cloud-security-starter/common-security-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-starter/cloud-redis-starter/taotao-cloud-redis-starter.iml" filepath="$PROJECT_DIR$/cloud-starter/cloud-redis-starter/taotao-cloud-redis-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-uc/cloud-uc-api/taotao-cloud-uc-api.iml" filepath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/taotao-cloud-uc-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-uc/cloud-uc-biz/taotao-cloud-uc-biz.iml" filepath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/taotao-cloud-uc-biz.iml" />
+    </modules>
+  </component>
+</project>

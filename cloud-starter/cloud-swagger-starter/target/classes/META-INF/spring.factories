@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.xxxJppp.cloud.swagger.SwaggerAutoConfiguration, \
+com.xxxJppp.cloud.swagger.CustomSwagger2Controller

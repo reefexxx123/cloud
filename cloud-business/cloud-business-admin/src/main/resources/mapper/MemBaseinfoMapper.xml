@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xxxJppp.cloud.business.admin.mapper.MemBaseinfoMapper">
+    <resultMap id="MemBaseinfoResult" type="com.xxxJppp.cloud.business.admin.model.MemBaseinfo" >
+            <result property="memid"   column="memid"    />
+            <result property="accno"   column="accno"    />
+            <result property="nickName"   column="nick_name"    />
+            <result property="memName"   column="mem_name"    />
+            <result property="mobile"   column="mobile"    />
+            <result property="sex"   column="sex"    />
+            <result property="idcardType"   column="idcard_type"    />
+            <result property="idcardNo"   column="idcard_no"    />
+            <result property="idcardFront"   column="idcard_front"    />
+            <result property="idcardBack"   column="idcard_back"    />
+            <result property="birthday"   column="birthday"    />
+            <result property="nationality"   column="nationality"    />
+            <result property="headimg"   column="headimg"    />
+            <result property="registerdate"   column="registerdate"    />
+            <result property="recomcode"   column="recomcode"    />
+            <result property="describes"   column="describes"    />
+            <result property="tag"   column="tag"    />
+            <result property="logincountry"   column="logincountry"    />
+            <result property="memfeatures"   column="memfeatures"    />
+            <result property="memorgin"   column="memorgin"    />
+            <result property="fansnum"   column="fansnum"    />
+            <result property="goldnum"   column="goldnum"    />
+            <result property="sitearea"   column="sitearea"    />
+            <result property="wechat"   column="wechat"    />
+            <result property="chatnickName"   column="chatnick_name"    />
+            <result property="delete"   column="delete"    />
+            <result property="createUser"   column="create_user"    />
+            <result property="createDate"   column="create_date"    />
+            <result property="modifyUser"   column="modify_user"    />
+            <result property="modifyDate"   column="modify_date"    />
+            </resultMap>
+
+
+    <select id="findListByPage" resultType="com.xxxJppp.cloud.business.admin.model.MemBaseinfo">
+        select * from mem_baseinfo t
+    </select>
+</mapper>

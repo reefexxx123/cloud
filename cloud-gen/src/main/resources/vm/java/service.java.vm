@@ -1,0 +1,23 @@
+package ${packageName}.service;
+
+import ${packageName}.model.${ClassName};
+import com.xxxJppp.cloud.common.model.PageResult;
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+
+/**
+ * ${functionName}Service
+ *
+ * @author ${author}
+ * @date ${datetime}
+ */
+public interface I${ClassName}Service extends IService<${ClassName}> {
+    /**
+     * 分页查询
+     * @param page
+     * @param ${className}
+     * @return
+     */
+    PageResult<${ClassName}> findListByPage(Page<${ClassName}> page, ${ClassName} ${className});
+}
+

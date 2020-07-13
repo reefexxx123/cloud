@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.xxxJppp.cloud.auth.store.OAuth2RedisTokenStore,\
+com.xxxJppp.cloud.auth.exception.GlobalExceptionHandlerResolver

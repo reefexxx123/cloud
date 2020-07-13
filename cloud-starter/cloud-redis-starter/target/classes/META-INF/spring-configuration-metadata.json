@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "cloud.redis.cache-manager",
+      "type": "com.xxxJppp.cloud.redis.properties.CacheManagerProperties",
+      "sourceType": "com.xxxJppp.cloud.redis.properties.CacheManagerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "cloud.redis.cache-manager.configs",
+      "type": "java.util.List<com.xxxJppp.cloud.redis.properties.CacheManagerProperties$CacheConfig>",
+      "sourceType": "com.xxxJppp.cloud.redis.properties.CacheManagerProperties"
+    }
+  ],
+  "hints": []
+}

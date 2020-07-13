@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="${packageName}.mapper.${ClassName}Mapper">
+    <resultMap id="${ClassName}Result" type="${packageName}.model.${ClassName}" >
+        #foreach ($column in $columns)
+    <result property="${column.javaField}"   column="${column.columnName}"    />
+        #end
+    </resultMap>
+
+
+    <select id="findListByPage" resultType="${packageName}.model.${ClassName}">
+        select * from ${tableName} t
+    </select>
+</mapper>

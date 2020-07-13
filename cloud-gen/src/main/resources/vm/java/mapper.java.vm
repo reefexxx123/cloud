@@ -1,0 +1,25 @@
+package ${packageName}.mapper;
+
+import ${packageName}.model.${ClassName};
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import org.apache.ibatis.annotations.Mapper;
+
+
+/**
+ * ${functionName}
+ *
+ * @author ${author}
+ * @date ${datetime}
+ */
+@Mapper
+public interface ${ClassName}Mapper extends BaseMapper<${ClassName}> {
+    /**
+     * 分页查询用户列表
+     * @param page
+     * @param ${className}
+     * @return
+     */
+    IPage<${ClassName}> findListByPage(Page<${ClassName}> page, ${ClassName} ${className});
+}

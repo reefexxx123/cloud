@@ -1,0 +1,8 @@
+com\xxxJppp\cloud\redis\RedisAutoConfigure.class
+com\xxxJppp\cloud\redis\serializer\RedisObjectSerializer.class
+com\xxxJppp\cloud\redis\properties\CacheManagerProperties$CacheConfig.class
+com\xxxJppp\cloud\redis\properties\CacheManagerProperties.class
+com\xxxJppp\cloud\redis\constant\RedisToolsConstant.class
+com\xxxJppp\cloud\redis\repository\RedisService.class
+META-INF\spring-configuration-metadata.json
+com\xxxJppp\cloud\redis\repository\RedisRepository.class

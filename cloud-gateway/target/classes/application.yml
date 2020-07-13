@@ -1,0 +1,144 @@
+server:
+  port: 10005
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: cloud-gateway-center
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true
+          enabled: true
+      routes:
+        - id: cloud-uc-center
+          uri: lb://cloud-uc-center
+          predicates:
+            - Path=/uc/**
+          filters:
+            - StripPrefix=1
+        - id: cloud-business-admin-center
+          uri: lb://cloud-business-admin-center
+          predicates:
+            - Path=/system/**
+          filters:
+            - StripPrefix=1
+        - id: cloud-auth-center
+          uri: lb://cloud-auth-center
+          predicates:
+            - Path=/auth/**
+          filters:
+            - StripPrefix=1
+            - PreserveHostHeader
+            - name: RequestRateLimiter
+              args:
+                key-resolver: '#{@remoteAddrKeyResolver}'
+                redis-rate-limiter.replenishRate: 10
+                redis-rate-limiter.burstCapacity: 20
+      default-filters:
+        # 降级配置
+        - name: Hystrix
+          args:
+            name: default
+            fallbackUri: 'forward:/fallback'
+
+cloud:
+  swagger-agg:
+    enabled: true
+    api-docs-path: /api-docs
+    swagger-version: 2.0
+    generate-routes: cloud-uc-center,cloud-auth-center
+#  oauth2:
+#    token:
+#      store:
+#        type: redis
+#    security:
+#      enabled: true #是否开启资源服务器
+#      ignore:
+#        # 忽略认证的地址
+#        http-urls: >
+#          /*/api-docs,
+#          /code,
+#          /uc/repeat/check,
+#          /auth/oauth/**,
+#          /auth/mobile/login,
+#          /auth/sms/code,
+#          /auth/social/**,
+#          /auth/css/**,
+#          /auth/images/**,
+#          /auth/js/**,
+#          /favicon.ico,
+#          /manifest.json,
+#          /robots.txt
+#      auth:
+#        # 续签
+#        renew:
+#          enable: true
+#          # 白名单
+#          include-client-ids:
+#            - webApp
+
+ribbon:
+  eager-load:
+    enabled: true
+  ServerListRefreshInterval: 10  #刷新服务列表源的间隔时间
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
+  ReadTimeout: 90000
+  ConnectTimeout: 90000
+  OkToRetryOnAllOperations: true
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 1
+
+feign:
+  hystrix:
+    enabled: true
+  okhttp:
+    enabled: true
+  httpclient:
+    enabled: false
+    max-connections: 10000
+    max-connections-per-route: 1000
+  client:
+    config:
+      feign-name:
+        connectTimeout: 300000
+        readTimeout: 300000
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+    response:
+      enabled: true
+
+##开启日志DEBUG级别，便于查看调试信息
+logging:
+  level:
+    org.springframework.security: DEBUG

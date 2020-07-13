@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="taotao-cloud-uc-biz" />
+        <module name="cloud-auth" />
+        <module name="cloud-auth (1)" />
+        <module name="cloud-business-admin" />
+        <module name="cloud-uc-api" />
+        <module name="cloud-auth-starter" />
+        <module name="cloud-gateway" />
+        <module name="cloud-swagger-starter" />
+        <module name="cloud-uc-biz" />
+        <module name="common-security-starter" />
+        <module name="taotao-cloud-redis-starter" />
+        <module name="eureka" />
+        <module name="cloud-common-starter" />
+        <module name="cloud-gen" />
+        <module name="taotao-cloud-uc-api" />
+        <module name="cloud-redis-starter" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-gateway" target="1.8" />
+      <module name="auth" target="1.8" />
+      <module name="auth-client" target="1.8" />
+      <module name="auth-example" target="1.8" />
+      <module name="auth-server" target="1.8" />
+      <module name="cloud" target="1.8" />
+      <module name="cloud-auth" target="1.8" />
+      <module name="cloud-auth (1)" target="1.8" />
+      <module name="cloud-auth-starter" target="1.8" />
+      <module name="cloud-auth2" target="1.8" />
+      <module name="cloud-authcopy" target="1.8" />
+      <module name="cloud-business" target="1.8" />
+      <module name="cloud-business-admin" target="1.8" />
+      <module name="cloud-common-starter" target="1.8" />
+      <module name="cloud-gateway" target="1.8" />
+      <module name="cloud-gen" target="1.8" />
+      <module name="cloud-oauth" target="1.8" />
+      <module name="cloud-redis-starter" target="1.8" />
+      <module name="cloud-security-starter" target="1.8" />
+      <module name="cloud-starter" target="1.8" />
+      <module name="cloud-swagger-starter" target="1.8" />
+      <module name="cloud-uc" target="1.8" />
+      <module name="cloud-uc-api" target="1.8" />
+      <module name="cloud-uc-biz" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="common-security-starter" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="taotao-cloud-redis-starter" target="1.8" />
+      <module name="taotao-cloud-uc-api" target="1.8" />
+      <module name="taotao-cloud-uc-biz" target="1.5" />
+      <module name="wap" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-example" options="-parameters" />
+    </option>
+  </component>
+</project>

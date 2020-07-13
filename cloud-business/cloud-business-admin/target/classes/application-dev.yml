@@ -1,0 +1,163 @@
+server:
+  port: 9899
+  http2:
+    enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    # 表示eureka client间隔多久去拉取服务注册信息，默认为30秒，如果要迅速获取服务注册状态，可以缩小该值
+    lease-renewal-interval-in-seconds: 5
+    # 表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则将移除该instance。
+    # 默认为90秒
+    # 如果该值太大，则很可能将流量转发过去的时候，该instance已经不存活了。
+    # 如果该值设置太小了，则instance则很可能因为临时的网络抖动而被摘除掉。
+    # 该值至少应该大于 leaseRenewalIntervalInSeconds
+    lease-expiration-duration-in-seconds: 10
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: cloud-business-admin-center
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://${CLOUD-MYSQL-HOST:localhost}:${CLOUD-NACOS-PORT:3306}/basecloud?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2b8
+    username: ${CLOUD-MYSQL-USERNAME:root}
+    password: ${CLOUD-MYSQL-PASSWORD:root}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      connection-test-query: SELECT 1
+      max-lifetime: 120000
+      maximum-pool-size: 15
+      minimum-idle: 3
+      connection-timeout: 30000
+      idle-timeout: 30000
+      auto-commit: true
+      pool-name: DatebookHikariCP
+  redis:
+    host: ${CLOUD-REDIS-HOST:localhost}
+    port: ${CLOUD-REDIS-PORT:6379}
+    password: ${CLOUD-REDIS-PASSWORD:}
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  typeAliasesPackage: com.xxxJppp.cloud.business.admin.model
+  global-config:
+    db-config:
+      id-type: auto
+      table-underline: true
+      field-strategy: NOT_NULL
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+auth-server: http://cloud-auth-center
+security:
+  oauth2:
+    client:
+      client-id: gatewayClient
+      client-secret: 123456
+      grant-type: password
+      scope: all
+      user-authorization-uri: ${auth-server}/oauth/authorize
+      access-token-uri: ${auth-server}/oauth/token
+      registered-redirect-uri:
+    resource:
+      token-info-uri: ${auth-server}/oauth/check_token
+
+cloud:
+  # 认证模块
+  oauth2:
+    token:
+      store:
+        type: redis
+    security:
+      enabled: true
+      ignore:
+        # 忽略认证的地址
+        http-urls: >
+          /api-docs,
+          /socket/**,
+          /log
+  # swagger模块
+  swagger:
+    enabled: true
+    title: 后台管理
+    description: 后台管理接口文档
+    version: 1.0
+    license: Apache
+    license-url: https://opensource.org/licenses/Apache-2.0Url
+    contact:
+      name: dengtao
+      url: http://dtbox.top/
+      email: 981376577@qq.com
+    base-package: com.xxxJppp.cloud.business.admin.controller
+    host: ${spring.cloud.client.ip-address}:${server.port}
+
+feign:
+  sentinel:
+    enabled: true
+  hystrix:
+    enabled: false
+  okhttp:
+    enabled: true
+  httpclient:
+    enabled: false
+    max-connections: 1000
+    max-connections-per-route: 100
+  client:
+    config:
+      feignName:
+        connectTimeout: 30000
+        readTimeout: 30000
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+    response:
+      enabled: true
+
+#hystrix:
+#  threadpool:
+#    default:
+#      coreSize: 1200
+#      maximumSize: 15000
+#      allowMaximumSizeToDivergeFromCoreSize: true
+#      maxQueueSize: 2000
+#      queueSizeRejectionThreshold: 1800
+#  command:
+#    default:
+#      circuitBreaker:
+#        # 当在配置时间窗口内达到此数量的失败后，进行短路。默认20个
+#        requestVolumeThreshold: 30
+#        # 触发短路的时间值，当该值设为5000时，则当触发 circuit break 后的5000毫秒内都会拒绝request
+#        # 也就是5000毫秒后才会关闭circuit。默认5000
+#        sleepWindowInMilliseconds: 45000
+#      execution:
+#        timeout:
+#          enabled: false
+#        isolation:
+#          strategy: SEMAPHORE
+#          semaphore:
+#            maxConcurrentRequests: 100
+#          thread:
+#            # 断路器超时时间，默认1000ms
+#            timeoutInMilliseconds: 300000
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 90000
+

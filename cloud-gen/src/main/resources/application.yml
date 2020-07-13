@@ -1,0 +1,51 @@
+server:
+  port: 8999
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: cloud-gen-center
+  datasource:
+    url: jdbc:mysql://localhost:3306/basecloud?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2b8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+
+cloud:
+  # swagger模块
+  swagger:
+    enabled: true
+    title: 生成代码中心
+    description: 生成代码接口文档
+    version: 1.0
+    license: Apache
+    license-url: https://opensource.org/licenses/Apache-2.0Url
+    base-package: com.xxxJppp.cloud.generator.controller
+    contact:
+      name: xxxJppp
+      url: http://dtbox.top/
+      email: 981376577@qq.com
+    host: ${spring.cloud.client.ip-address}:${server.port}
+
+# 日志配置
+logging:
+  level:
+    org.springframework: warn
+
+#eureka:
+#  client: #客户端注册进eureka服务列表内
+#    service-url:
+#       defaultZone: http://127.0.0.1:8761/eureka
+#  instance:
+#    instance-id: ${spring.application.name}:${server.port}
+#    prefer-ip-address: true     #访问路径可以显示IP地址
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*/*Mapper.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.xxxJppp.cloud.generator.model

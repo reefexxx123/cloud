@@ -1,0 +1,12 @@
+com\xxxJppp\cloud\uc\api\entity\SysRole.class
+com\xxxJppp\cloud\uc\api\entity\SysMenu.class
+com\xxxJppp\cloud\uc\api\entity\MemLogin.class
+com\xxxJppp\cloud\uc\api\feign\fallback\RemoteUserFallbackImpl.class
+com\xxxJppp\cloud\uc\api\feign\RemoteUserService.class
+com\xxxJppp\cloud\uc\api\vo\MenuMetaVo.class
+com\xxxJppp\cloud\uc\api\vo\MenuVo.class
+com\xxxJppp\cloud\uc\api\query\UserListQuery.class
+com\xxxJppp\cloud\uc\api\vo\SysDeptTreeVo.class
+com\xxxJppp\cloud\uc\api\feign\fallback\RemoteUserFallbackImpl$1.class
+com\xxxJppp\cloud\uc\api\vo\MenuTreeVo.class
+com\xxxJppp\cloud\uc\api\vo\DeptTreeVo.class

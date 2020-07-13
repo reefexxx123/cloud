@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.xxxJppp.cloud.uc.api.feign.fallback.RemoteUserFallbackImpl

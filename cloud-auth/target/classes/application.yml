@@ -1,0 +1,142 @@
+server:
+  port: 10011
+  servlet:
+    session:
+      cookie:
+        name: UISESSIONMEMBER #不要忘记设置cookie-name，否则授权码模式会报错
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    # 表示eureka client间隔多久去拉取服务注册信息，默认为30秒，如果要迅速获取服务注册状态，可以缩小该值
+    lease-renewal-interval-in-seconds: 5
+    # 表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则将移除该instance。
+    # 默认为90秒
+    # 如果该值太大，则很可能将流量转发过去的时候，该instance已经不存活了。
+    # 如果该值设置太小了，则instance则很可能因为临时的网络抖动而被摘除掉。
+    # 该值至少应该大于 leaseRenewalIntervalInSeconds
+    lease-expiration-duration-in-seconds: 10
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: cloud-auth-center
+  datasource:
+    url: jdbc:mysql://localhost:3306/basecloud?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+  freemarker:
+    # 禁用模板缓存
+    cache: false
+    # 编码格式
+    charset: UTF-8
+    # freemarker模板后缀 默认是 .ftl
+    suffix: .ftl
+    # 是否为此技术启用MVC视图分辨率。
+    enabled: true
+    # Content-Type值
+    content-type: text/html
+    # #模板加载路径 按需配置 ,默认路径是 classpath:/templates/
+    template-loader-path: classpath:/templates/
+
+cloud:
+  # 认证模块
+  oauth2:
+    # 存储token方式
+    token:
+      store:
+        type: redis
+    security:
+      enabled: false #是否开启资源服务器
+      code:
+        # 忽略验证码的应用编号
+        ignore-client-code: web
+      ignore:
+        # 忽略认证的地址
+        http-urls: >
+          /api/socket/**,
+          /oauth/**,
+          /api-docs
+  # swagger模块
+  swagger:
+    enabled: true
+    title: 认证中心
+    description: 认证中心接口文档
+    version: 1.0
+    license: Apache
+    license-url: https://opensource.org/licenses/Apache-2.0Url
+    base-package: com.xxxJppp.cloud.auth.controller
+    contact:
+      name: dengtao
+      url: http://dtbox.top/
+      email: 981376577@qq.com
+    host: ${spring.cloud.client.ip-address}:${server.port}
+
+auth-server: http://localhost:10011
+security:
+  oauth2:
+    client:
+      client-id: gatewayClient
+      client-secret: 123456
+      scope: all
+      user-authorization-uri: ${auth-server}/oauth/authorize
+      access-token-uri: ${auth-server}/oauth/token
+      registered-redirect-uri:
+    resource:
+      token-info-uri: ${auth-server}/oauth/check_token
+
+ribbon:
+  eager-load:
+    enabled: true
+  ServerListRefreshInterval: 10  #刷新服务列表源的间隔时间
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
+  ReadTimeout: 90000
+  ConnectTimeout: 90000
+  OkToRetryOnAllOperations: true
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 1
+
+feign:
+  hystrix:
+    enabled: true
+  okhttp:
+    enabled: true
+  httpclient:
+    enabled: false
+    max-connections: 10000
+    max-connections-per-route: 1000
+  client:
+    config:
+      feign-name:
+        connectTimeout: 300000
+        readTimeout: 300000
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+    response:
+      enabled: true
+
+##开启日志DEBUG级别，便于查看调试信息
+logging:
+  level:
+    org.springframework.security: DEBUG

@@ -1,0 +1,39 @@
+package ${packageName}.model;
+
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.EqualsAndHashCode;
+#foreach ($import in $importList)
+import ${import};
+#end
+import com.xxxJppp.cloud.common.base.BaseEntity;
+
+/**
+ * ${functionName}对象
+ *
+ * @author ${author}
+ * @date ${datetime}
+ */
+@Getter
+@Setter
+@EqualsAndHashCode(callSuper = false)
+@TableName("${tableName}")
+public class ${ClassName} extends BaseEntity {
+    private static final long serialVersionUID=1L;
+
+    #foreach ($column in $columns)
+    #if(!$column.superColumn)
+    /** $column.columnComment */
+    #if($column.list)
+    #set($parentheseIndex=$column.columnComment.indexOf("（"))
+    #if($parentheseIndex != -1)
+    #set($comment=$column.columnComment.substring(0, $parentheseIndex))
+    #else
+    #set($comment=$column.columnComment)
+    #end
+    #end
+    private $column.javaType $column.javaField;
+    #end
+    #end
+}

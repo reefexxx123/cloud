@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxxJppp.cloud.uc.biz.dao.MemLoginMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxxJppp.cloud.uc.api.entity.MemLogin">
+        <id column="id" property="id" />
+        <result column="accno" property="accno" />
+        <result column="loginname" property="loginname" />
+        <result column="password" property="password" />
+        <result column="login_type" property="loginType" />
+        <result column="pay_password" property="payPassword" />
+        <result column="status" property="status" />
+        <result column="last_login_time" property="lastLoginTime" />
+        <result column="login_num" property="loginNum" />
+        <result column="client_ip" property="clientIp" />
+        <result column="google_secret_key" property="googleSecretKey" />
+    </resultMap>
+
+</mapper>

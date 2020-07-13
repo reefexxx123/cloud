@@ -1,0 +1,35 @@
+package ${packageName}.service.impl;
+
+import com.xxxJppp.cloud.common.model.PageResult;
+import org.springframework.stereotype.Service;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+
+import lombok.extern.slf4j.Slf4j;
+
+import ${packageName}.mapper.${ClassName}Mapper;
+import ${packageName}.model.${ClassName};
+import ${packageName}.service.I${ClassName}Service;
+
+/**
+ * ${functionName}Service业务层处理
+ *
+ * @author ${author}
+ * @date ${datetime}
+ */
+@Slf4j
+@Service
+public class ${ClassName}ServiceImpl extends ServiceImpl<${ClassName}Mapper, ${ClassName}> implements I${ClassName}Service {
+    /**
+    *  分页查询
+     * @param page
+     * @param ${className}
+     * @return
+     */
+    @Override
+    public PageResult<${ClassName}> findListByPage(Page<${ClassName}> page, ${ClassName} ${className}){
+        IPage<${ClassName}> iPage  =  baseMapper.findListByPage(page, ${className});
+        return PageResult.succeed(iPage);
+    }
+}

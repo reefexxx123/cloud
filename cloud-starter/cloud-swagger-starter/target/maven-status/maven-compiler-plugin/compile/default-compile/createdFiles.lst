@@ -1,0 +1,8 @@
+com\xxxJppp\cloud\swagger\SwaggerProperties$GlobalOperationParameter.class
+com\xxxJppp\cloud\swagger\SwaggerProperties$DocketInfo.class
+com\xxxJppp\cloud\swagger\SwaggerProperties.class
+com\xxxJppp\cloud\swagger\SwaggerProperties$Contact.class
+com\xxxJppp\cloud\swagger\SwaggerAutoConfiguration.class
+META-INF\spring-configuration-metadata.json
+com\xxxJppp\cloud\swagger\CustomSwagger2Controller.class
+com\xxxJppp\cloud\swagger\Swagger2Configuration.class
