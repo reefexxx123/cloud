@@ -12,7 +12,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
  */
 @Data
 @RefreshScope
-@ConfigurationProperties(prefix = "xxxjppp.cloud.oauth2.security")
+@ConfigurationProperties(prefix = "cloud.oauth2.security")
 public class SecurityProperties {
     /**
      * 是否开启权限认证 总开关

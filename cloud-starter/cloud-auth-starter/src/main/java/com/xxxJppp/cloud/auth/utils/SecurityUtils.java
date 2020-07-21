@@ -20,55 +20,59 @@ import java.util.List;
  */
 @UtilityClass
 public class SecurityUtils {
-	/**
-	 * 获取Authentication
-	 */
-	public Authentication getAuthentication() {
-		return SecurityContextHolder.getContext().getAuthentication();
-	}
+    /**
+     * 获取Authentication
+     */
+    public Authentication getAuthentication() {
+        return SecurityContextHolder.getContext().getAuthentication();
+    }
 
-	/**
-	 * 获取用户
-	 *
-	 * @param authentication
-	 * @return BaseUser
-	 * <p>
-	 * 获取当前用户的全部信息 EnableBaseResourceServer true
-	 * 获取当前用户的用户名 EnableBaseResourceServer false
-	 */
-	public SecurityUser getUser(Authentication authentication) {
-		Object principal = authentication.getPrincipal();
-		if (principal instanceof SecurityUser) {
-			return (SecurityUser) principal;
-		}
-		return null;
-	}
+    /**
+     * 获取用户
+     *
+     * @param authentication
+     * @return BaseUser
+     * <p>
+     * 获取当前用户的全部信息 EnableBaseResourceServer true
+     * 获取当前用户的用户名 EnableBaseResourceServer false
+     */
+    public SecurityUser getUser(Authentication authentication) {
+        Object principal = authentication.getPrincipal();
+        if (principal instanceof SecurityUser) {
+            return (SecurityUser) principal;
+        }
+        return null;
+    }
 
-	/**
-	 * 获取用户
-	 */
-	public SecurityUser getUser() {
-		Authentication authentication = getAuthentication();
-		return getUser(authentication);
-	}
+    /**
+     * 获取用户
+     */
+    public SecurityUser getUser() {
+        Authentication authentication = getAuthentication();
+        return getUser(authentication);
+    }
 
-	/**
-	 * 获取用户角色信息
-	 *
-	 * @return 角色集合
-	 */
-	public List<String> getRoles() {
-		Authentication authentication = getAuthentication();
-		Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
+    public static String getUsername() {
+        return getUser().getUsername();
+    }
 
-		List<String> roleIds = new ArrayList<>();
-		authorities.stream()
-				.filter(granted -> StrUtil.startWith(granted.getAuthority(), SecurityConstant.ROLE))
-				.forEach(granted -> {
-					String id = StrUtil.removePrefix(granted.getAuthority(), SecurityConstant.ROLE);
-					roleIds.add(id);
-				});
-		return roleIds;
-	}
+    /**
+     * 获取用户角色信息
+     *
+     * @return 角色集合
+     */
+    public List<String> getRoles() {
+        Authentication authentication = getAuthentication();
+        Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
+
+        List<String> roleIds = new ArrayList<>();
+        authorities.stream()
+                .filter(granted -> StrUtil.startWith(granted.getAuthority(), SecurityConstant.ROLE))
+                .forEach(granted -> {
+                    String id = StrUtil.removePrefix(granted.getAuthority(), SecurityConstant.ROLE);
+                    roleIds.add(id);
+                });
+        return roleIds;
+    }
 
 }

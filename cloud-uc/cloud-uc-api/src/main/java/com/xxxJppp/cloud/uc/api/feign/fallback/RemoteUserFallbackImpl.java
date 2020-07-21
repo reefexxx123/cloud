@@ -1,5 +1,6 @@
 package com.xxxJppp.cloud.uc.api.feign.fallback;
 
+import com.xxxJppp.cloud.uc.api.domain.MemLoginDTO;
 import com.xxxJppp.cloud.uc.api.feign.RemoteUserService;
 import com.xxxJppp.cloud.common.model.Result;
 import com.xxxJppp.cloud.common.model.SecurityUser;
@@ -34,8 +35,8 @@ public class RemoteUserFallbackImpl implements FallbackFactory<RemoteUserService
             }
 
             @Override
-            public Result<SecurityUser> getUserInfoBySocial(String providerId, int providerUserId) {
-                log.error("调用getUserInfoBySocial异常：providerId: {}, providerUserId: {}", providerId, providerUserId, throwable);
+            public Result<MemLoginDTO> getUserInfoByUserId(Long userId) {
+                log.error("调用getUserInfoByUserId异常：{}", userId, throwable);
                 return Result.failed(null);
             }
         };

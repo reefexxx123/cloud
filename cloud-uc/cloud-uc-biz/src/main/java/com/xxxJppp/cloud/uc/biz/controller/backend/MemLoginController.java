@@ -4,6 +4,7 @@ package com.xxxJppp.cloud.uc.biz.controller.backend;
 import com.xxxJppp.cloud.common.exception.BusinessException;
 import com.xxxJppp.cloud.common.model.Result;
 import com.xxxJppp.cloud.common.model.SecurityUser;
+import com.xxxJppp.cloud.uc.api.domain.MemLoginDTO;
 import com.xxxJppp.cloud.uc.api.entity.MemLogin;
 import com.xxxJppp.cloud.uc.biz.service.IMemLoginService;
 import com.xxxJppp.cloud.uc.biz.service.ISysPermissionService;
@@ -28,18 +29,20 @@ public class MemLoginController {
     @Autowired
     private IMemLoginService memLoginService;
 
-    @Autowired
-    private ISysPermissionService sysPermissionService;
-
     @ApiOperation("获取用户信息")
-    @GetMapping("/info/{userIdOrUserNameOrMobileOrEmail}")
-    public Result<SecurityUser> getUserInfo(@PathVariable String userIdOrUserNameOrMobileOrEmail) {
-        MemLogin user = memLoginService.findUserByUserIdOrUserNameOrMobile(userIdOrUserNameOrMobileOrEmail);
+    @GetMapping("/info/{userIdOrUserNameOrMobile}")
+    public Result<SecurityUser> getUserInfo(@PathVariable String userIdOrUserNameOrMobile) {
+        MemLogin user = memLoginService.findUserByUserIdOrUserNameOrMobile(userIdOrUserNameOrMobile);
         if (user == null) {
             throw new BusinessException("未查询到用户数据");
         }
         return Result.succeed(memLoginService.findUserInfo(user));
     }
 
+    @ApiOperation("获取用户信息")
+    @GetMapping("/get/{userId}")
+    public Result<MemLoginDTO> getUserInfo(@PathVariable Long userId) {
+        return Result.succeed(memLoginService.findUserInfoByUesrId(userId));
+    }
 }
 

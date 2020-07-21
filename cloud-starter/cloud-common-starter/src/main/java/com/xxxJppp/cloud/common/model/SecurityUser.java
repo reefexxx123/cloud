@@ -46,6 +46,7 @@ public class SecurityUser implements UserDetails, Serializable {
     private String nickname;
     private Integer sex;
     private String type;
+    private Boolean admin;
 
     private Set<String> permissions;
     private Set<String> roles;

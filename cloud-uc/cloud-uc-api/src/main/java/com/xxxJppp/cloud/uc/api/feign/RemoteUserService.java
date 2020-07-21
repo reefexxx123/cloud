@@ -1,5 +1,6 @@
 package com.xxxJppp.cloud.uc.api.feign;
 
+import com.xxxJppp.cloud.uc.api.domain.MemLoginDTO;
 import com.xxxJppp.cloud.uc.api.feign.fallback.RemoteUserFallbackImpl;
 import com.xxxJppp.cloud.common.constant.ServiceNameConstant;
 import com.xxxJppp.cloud.common.model.Result;
@@ -34,15 +35,14 @@ public interface RemoteUserService {
     @GetMapping("/backend/mem/info/{mobile}")
     Result<SecurityUser> getUserInfoByMobile(@PathVariable("mobile") String mobile);
 
+
     /**
-     * 通过第三方查询用户包括角色权限等
-     *
-     * @param providerId     providerId
-     * @param providerUserId providerUserId
+     * 通过用户ID查询用户包括角色
+     * @param userId 用户ID
+     * @return
      */
-    @GetMapping("/backend/user/mem/social")
-    Result<SecurityUser> getUserInfoBySocial(@RequestParam("providerId") String providerId,
-                                             @RequestParam("providerUserId") int providerUserId);
+    @GetMapping("/backend/mem/get/{userId}")
+    Result<MemLoginDTO> getUserInfoByUserId(@PathVariable("userId") Long userId);
 
 }
 

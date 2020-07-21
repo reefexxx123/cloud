@@ -1,6 +1,7 @@
 package com.xxxJppp.cloud.uc.biz.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.xxxJppp.cloud.uc.api.domain.MemLoginDTO;
 import com.xxxJppp.cloud.uc.api.entity.MemLogin;
 
 /**
@@ -13,4 +14,5 @@ import com.xxxJppp.cloud.uc.api.entity.MemLogin;
  */
 public interface MemLoginMapper extends BaseMapper<MemLogin> {
 
+    MemLoginDTO getUserByUserName(Long id);
 }

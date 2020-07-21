@@ -16,6 +16,8 @@
         <module>cloud-common-starter</module>
         <module>cloud-swagger-starter</module>
         <module>cloud-redis-starter</module>
+        <module>cloud-tenant-starter</module>
+        <module>cloud-data-starter</module>
     </modules>
 
 </project>

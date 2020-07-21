@@ -1,7 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="778df55f-5b07-4236-be11-a275c0edeece" name="Default Changelist" comment="" />
+    <list default="true" id="778df55f-5b07-4236-be11-a275c0edeece" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_transmittable_thread_local_2_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-demo/cloud-demo-tenant/cloud-demo-tenant.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-demo/cloud-demo-tenant/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-demo/cloud-demo-tenant/src/main/java/com/xxxJppp/cloud/demo/tenant/DemoTenantApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-demo/cloud-demo-tenant/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-demo/cloud-demo-tenant/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-demo/cloud-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/constant/StrPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/context/LbIsolationContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/context/TenantContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/enums/DataScopeTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/enums/MultiTenantTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/enums/TenantStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/enums/TenantTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/utils/BizAssert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/utils/SpringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/cloud-data-starter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/annotation/DataScope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/aspect/DataScopeAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/config/PropertiesAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/datascope/DataScope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/datascope/DataScopeInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/datasource/BaseDatabaseConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/datasource/BaseMybatisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/datasource/MasterDatabaseConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/datasource/MyMetaObjectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/parsers/DynamicTableNameParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/parsers/ReplaceSql.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/properties/DatabaseProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/service/AwaitUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/servlet/TenantContextHandlerInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/servlet/TenantWebMvcConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/cloud-tenant-starter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/configuration/AuthorityDatabaseAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/configuration/AuthorityMybatisAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/configuration/DynamicDataSourceConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/DynamicDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/DynamicDataSourceContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/DynamicDataSourceSummoner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/aspect/DynamicDataSourceAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/mapper/InitDbMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/mapper/TenantDataSourceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/model/Tenant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/model/TenantDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/properties/DataSourceProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/properties/TenantProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/service/DefaultTenantDataSourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/service/ITenantDataSourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/strategy/ColumnInitSystemStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/strategy/InitSystemContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/strategy/InitSystemStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/strategy/SchemaInitSystemStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/utils/DataSourceUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/src/main/java/com/xxxJppp/cloud/uc/api/domain/MemLoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-auth/cloud-auth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth/cloud-auth.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-business/cloud-business-admin/cloud-business-admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-business/cloud-business-admin/cloud-business-admin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/model/MemLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/model/MemLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gateway/cloud-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/cloud-gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gen/cloud-gen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gen/cloud-gen.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gen/src/main/java/com/xxxJppp/cloud/generator/util/VelocityInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gen/src/main/java/com/xxxJppp/cloud/generator/util/VelocityInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gen/src/main/resources/vm/java/model.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gen/src/main/resources/vm/java/model.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/cloud-auth-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/cloud-auth-starter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/properties/SecurityProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/properties/SecurityProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/utils/SecurityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/utils/SecurityUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/target/classes/com/xxxJppp/cloud/auth/properties/SecurityProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/target/classes/com/xxxJppp/cloud/auth/properties/SecurityProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/target/classes/com/xxxJppp/cloud/auth/utils/SecurityUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/target/classes/com/xxxJppp/cloud/auth/utils/SecurityUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/cloud-common-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/cloud-common-starter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/base/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/base/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/base/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/base/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/constant/CommonConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/constant/CommonConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/constant/StarterNameConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/constant/StarterNameConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/model/SecurityUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/model/SecurityUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/target/classes/com/xxxJppp/cloud/common/base/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/target/classes/com/xxxJppp/cloud/common/base/BaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/target/classes/com/xxxJppp/cloud/common/base/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/target/classes/com/xxxJppp/cloud/common/base/BaseEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/target/classes/com/xxxJppp/cloud/common/constant/CommonConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/target/classes/com/xxxJppp/cloud/common/constant/CommonConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/target/classes/com/xxxJppp/cloud/common/constant/StarterNameConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/target/classes/com/xxxJppp/cloud/common/constant/StarterNameConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/target/classes/com/xxxJppp/cloud/common/model/SecurityUser$SecurityUserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/target/classes/com/xxxJppp/cloud/common/model/SecurityUser$SecurityUserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/target/classes/com/xxxJppp/cloud/common/model/SecurityUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/target/classes/com/xxxJppp/cloud/common/model/SecurityUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-redis-starter/cloud-redis-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-redis-starter/cloud-redis-starter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/cloud-swagger-starter/cloud-swagger-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/cloud-swagger-starter/cloud-swagger-starter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-starter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/cloud-uc-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/cloud-uc-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/src/main/java/com/xxxJppp/cloud/uc/api/entity/MemLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/src/main/java/com/xxxJppp/cloud/uc/api/entity/MemLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/src/main/java/com/xxxJppp/cloud/uc/api/entity/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/src/main/java/com/xxxJppp/cloud/uc/api/entity/SysRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/src/main/java/com/xxxJppp/cloud/uc/api/feign/RemoteUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/src/main/java/com/xxxJppp/cloud/uc/api/feign/RemoteUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/src/main/java/com/xxxJppp/cloud/uc/api/feign/fallback/RemoteUserFallbackImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/src/main/java/com/xxxJppp/cloud/uc/api/feign/fallback/RemoteUserFallbackImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/target/classes/com/xxxJppp/cloud/uc/api/entity/MemLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/target/classes/com/xxxJppp/cloud/uc/api/entity/MemLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/target/classes/com/xxxJppp/cloud/uc/api/entity/SysRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/target/classes/com/xxxJppp/cloud/uc/api/entity/SysRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/target/classes/com/xxxJppp/cloud/uc/api/feign/RemoteUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/target/classes/com/xxxJppp/cloud/uc/api/feign/RemoteUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/target/classes/com/xxxJppp/cloud/uc/api/feign/fallback/RemoteUserFallbackImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/target/classes/com/xxxJppp/cloud/uc/api/feign/fallback/RemoteUserFallbackImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/target/classes/com/xxxJppp/cloud/uc/api/feign/fallback/RemoteUserFallbackImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/target/classes/com/xxxJppp/cloud/uc/api/feign/fallback/RemoteUserFallbackImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/cloud-uc-biz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/cloud-uc-biz.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/src/main/java/com/xxxJppp/cloud/uc/biz/controller/backend/MemLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/src/main/java/com/xxxJppp/cloud/uc/biz/controller/backend/MemLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/src/main/java/com/xxxJppp/cloud/uc/biz/dao/MemLoginMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/src/main/java/com/xxxJppp/cloud/uc/biz/dao/MemLoginMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/src/main/java/com/xxxJppp/cloud/uc/biz/service/IMemLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/src/main/java/com/xxxJppp/cloud/uc/biz/service/IMemLoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/src/main/java/com/xxxJppp/cloud/uc/biz/service/impl/MemLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/src/main/java/com/xxxJppp/cloud/uc/biz/service/impl/MemLoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/src/main/resources/mapper/MemLoginMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/src/main/resources/mapper/MemLoginMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/src/main/resources/mapper/SysRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/src/main/resources/mapper/SysRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/auth/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,6 +151,10 @@
     <ignored path="$PROJECT_DIR$/cloud-starter/cloud-security-starter/target/" />
     <ignored path="$PROJECT_DIR$/cloud-oauth/target/" />
     <ignored path="$PROJECT_DIR$/cloud-authcopy/target/" />
+    <ignored path="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/target/" />
+    <ignored path="$PROJECT_DIR$/cloud-starter/cloud-data-starter/target/" />
+    <ignored path="$PROJECT_DIR$/cloud-demo/target/" />
+    <ignored path="$PROJECT_DIR$/cloud-demo/cloud-demo-tenant/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +187,35 @@
     <favorites_list name="cloud" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/strategy/InitSystemContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -74,36 +227,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Bearer</find>
-      <find>ruoyi</find>
-      <find>LoginUser</find>
-      <find>AuthorizationServerEndpointsConfigurer</find>
-      <find>请求权限不足</find>
-      <find>implements AuthenticationEntryPoint</find>
-      <find>checkTokenEndpointUrl</find>
-      <find>WebResponseExceptionTranslator</find>
-      <find>ResourceServerProperties</find>
-      <find>oAuth2AccessDeniedHandler</find>
-      <find>R</find>
-      <find>succeed</find>
-      <find>ok</find>
-      <find>AbstractAuthenticationSuccessEventHandler</find>
-      <find>请求路径</find>
-      <find>RemoteUserService</find>
-      <find>CustomUserAuthenticationConverter</find>
-      <find>CustomAuthenticationEntryPoint</find>
-      <find>cloud-authcopy</find>
-      <find>InvalidTokenException</find>
-      <find>tokenConverter</find>
-      <find>AuthenticationEntryPoint</find>
-      <find>tokenStore</find>
-      <find>customAuthenticationEntryPoint</find>
-      <find>CustomAccessDeniedHandler</find>
-      <find>messageWriters</find>
-      <find>errorWebExceptionHandler</find>
-      <find>dengtao</find>
-      <find>/v2/api-docs/**</find>
-      <find>用户未授权</find>
+      <find>TenantProperties</find>
+      <find>OpenTenantProperties</find>
+      <find>determineTargetDataSource</find>
+      <find>redisRepository</find>
+      <find>clearCurrentDataSourceKey</find>
+      <find>DatabaseProperties</find>
+      <find>DynamicTableNameParser</find>
+      <find>targetDataSources</find>
+      <find>setTargetDataSources</find>
+      <find>summoner</find>
+      <find>BaseMybatisConfiguration</find>
+      <find>已为您开启</find>
+      <find>data_s</find>
+      <find>data_source</find>
+      <find>getSqlSessionFactory</find>
+      <find>zuihou</find>
+      <find>DruidDataSource</find>
+      <find>master</find>
+      <find>DynamicDataSourceContextHolder</find>
+      <find>DynamicDataSourceSummoner</find>
+      <find>SpringUtil</find>
+      <find>BaseExceptionCode</find>
+      <find>ResultEnum.ERROR</find>
+      <find>BusinessException</find>
+      <find>BaseException</find>
+      <find>BizException</find>
+      <find>, -1</find>
+      <find>defaultDatabase</find>
+      <find>cloud_de</find>
+      <find>cloud_defaults</find>
     </findStrings>
     <replaceStrings>
       <replace>/auth</replace>
@@ -116,10 +269,15 @@
       <replace>[CLOUD]</replace>
       <replace>@author xxxJppp</replace>
       <replace>className</replace>
-      <replace>Result</replace>
-      <replace />
       <replace>succeed</replace>
       <replace>xxxJppp</replace>
+      <replace>BaseEntity</replace>
+      <replace>cloud</replace>
+      <replace>Result</replace>
+      <replace>ResultEnum.ERROR</replace>
+      <replace>ResultEnum</replace>
+      <replace>BusinessException</replace>
+      <replace />
     </replaceStrings>
     <dirStrings>
       <dir>D:\Work\workspace\cloud\auth\auth-example</dir>
@@ -138,99 +296,88 @@
       <dir>D:\Work\workspace\cloud\cloud-starter\cloud-security-starter\src\main\java\com\xxxJppp\common\security</dir>
       <dir>D:\Work\workspace\cloud\cloud-oauth\src\main\java</dir>
       <dir>D:\Work\workspace\cloud\cloud-starter\cloud-auth-starter</dir>
+      <dir>D:\Work\workspace\cloud\cloud-starter\cloud-tenant-starter</dir>
+      <dir>D:\Work\workspace\cloud\cloud-starter\cloud-data-starter\src\main\java\com\xxxJppp\cloud\data</dir>
+      <dir>D:\Work\workspace\cloud\cloud-starter\cloud-tenant-starter\src\main\java\com\xxxJppp\cloud\tenant</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cloud-authcopy/src/main/java/com/xxxJppp/cloud/auth/configuration/AuthorizationServerConfiguration.java" />
-        <option value="$PROJECT_DIR$/cloud-auth/src/main/java/com/xxxJppp/cloud/auth/CloudAuthApplication.java" />
-        <option value="$PROJECT_DIR$/cloud-gateway/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/cloud-auth/src/main/resources/templates/ftl/login.ftl" />
-        <option value="$PROJECT_DIR$/cloud-business/cloud-business-admin/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/feign/fallback/RemoteUserFallbackImpl.java" />
-        <option value="$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/feign/RemoteUserService.java" />
-        <option value="$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/controller/MemLoginController.java" />
-        <option value="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/src/main/java/com/xxxJppp/cloud/uc/biz/controller/backend/MemLoginController.java" />
-        <option value="$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/config/CustomUserAuthenticationConverter.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/annotation/EnableRyFeignClients.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/annotation/EnableBaseFeignClients.java" />
-        <option value="$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/BusinessAdminApplication.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/config/ActiveAttributeRemovalAdvice.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/component/RemoteTokenServices.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/base/BaseEntity.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/component/ActiveAttributeRemovalAdvice.java" />
-        <option value="$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/model/MemLogin.java" />
-        <option value="$PROJECT_DIR$/cloud-auth/src/main/java/com/xxxJppp/cloud/auth/configuration/AuthorizationServerConfiguration.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/component/CustomUserInfoTokenServices.java" />
-        <option value="$PROJECT_DIR$/cloud-auth/src/main/java/com/xxxJppp/cloud/auth/configuration/WebSecurityConfiguration.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/component/ResourceAuthExceptionEntryPoint.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/component/CustomAuthenticationEntryPoint.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/config/SecurityHandlerConfig.java" />
-        <option value="$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/feign/OAuth2FeignRequestInterceptor.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/annotation/EnableBaseResourceServer.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-security-starter/src/main/resources/META-INF/spring.factories" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/component/CustomAccessDeniedHandler.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/exception/GlobalExceptionHandlerResolver.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/config/BaseResourceServerConfigurerAdapter.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/resources/META-INF/spring.factories" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/component/BaseRemoteTokenServices.java" />
-        <option value="$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/auth/CustomAuthenticationManager.java" />
-        <option value="$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/config/ResourceServerConfiguration.java" />
-        <option value="$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/error/GlobalErrorAttributes.java" />
-        <option value="$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/error/GlobalErrorWebExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/error/CustomErrorWebFluxAutoConfiguration.java" />
-        <option value="$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/serializer/BaseAuth2ExceptionSerializer.java" />
-        <option value="$PROJECT_DIR$/cloud-auth/src/main/java/com/xxxJppp/cloud/auth/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/cloud-auth/src/main/java/com/xxxJppp/cloud/auth/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/cloud-auth/src/main/java/com/xxxJppp/cloud/auth/controller/TokenController.java" />
-        <option value="$PROJECT_DIR$/cloud-auth/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/auth/JsonAuthenticationEntryPoint.java" />
-        <option value="$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/auth/AccessManager.java" />
-        <option value="$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/error/JsonErrorWebExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/dynamic/DynamicDataSource.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/properties/DatabaseProperties.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/mybatis/BaseMybatisConfiguration.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/datasource/BaseDatabaseConfiguration.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/DynamicRoutingDataSource.java" />
+        <option value="$PROJECT_DIR$/cloud-uc/cloud-uc-api/src/main/java/com/xxxJppp/cloud/uc/api/feign/fallback/RemoteUserFallbackImpl.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/DynamicDataSourceAspect.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/aspect/DataSourceAspect.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/annotation/DynamicSwitchDataSource.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-data-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/config/DataSourceAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/constant/StarterNameConstant.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/cloud-demo/cloud-demo-tenant/src/main/java/com/xxxJppp/cloud/demo/tenant/DemoTenantApplication.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/properties/DatabaseProperties.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/properties/TenantProperties.java" />
+        <option value="$PROJECT_DIR$/cloud-demo/cloud-demo-tenant/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/DynamicDataSourceInit.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/properties/DruidDataSourceProperties.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/properties/DataSourceProperties.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/aspect/DynamicDataSourceAspect.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/configuration/AuthorityMybatisAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/datasource/BaseMybatisConfiguration.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/config/PropertiesAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/mapper/SysLogininforMapper.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/mapper/TenantDataSourceMapper.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/service/ITenantDataSourceService.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/service/DefaultTenantDataSourceService.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/README.md" />
+        <option value="$PROJECT_DIR$/cloud-demo/cloud-demo-tenant/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/datasource/MasterDatabaseConfiguration.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/DynamicDataSourceContextHolder.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/utils/DataSourceUtil.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/configuration/DynamicDataSourceConfiguration.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/DynamicDataSource.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-redis-starter/src/main/java/com/xxxJppp/cloud/redis/RedisAutoConfigure.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/model/TenantDataSource.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/DynamicDataSourceSummoner.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/service/SchemaInitSystemStrategy.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/model/InitSystemStrategy.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/utils/BizAssert.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/properties/TenantProperties.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/configuration/AuthorityDatabaseAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/constant/CommonConstant.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/exception/BusinessException.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/constant/StrPool.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/strategy/SchemaInitSystemStrategy.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/mapper/InitDbMapper.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/strategy/ColumnInitSystemStrategy.java" />
+        <option value="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/strategy/InitSystemContext.java" />
       </list>
     </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="cloud-auth-starter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="cloud-auth-starter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="cloud-auth-starter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.springframework.cloud:spring-cloud-starter-security:2.2.2.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
+    <option name="x" value="-9" />
     <option name="width" value="1935" />
-    <option name="height" value="1038" />
+    <option name="height" value="1039" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,11 +389,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="MyBatisLogPluginindexNum" value="235" />
+    <property name="MyBatisLogPluginindexNum" value="273" />
     <property name="MyBatisLogPluginparameters" value="Parameters:" />
     <property name="MyBatisLogPluginpreparing" value="Preparing:" />
     <property name="MyBatisLogPluginrunning" value="true" />
@@ -254,37 +403,39 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/cloud-oauth/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15307692" />
     <property name="project.structure.side.proportion" value="0.43970588" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\workspace\cloud" />
+      <recent name="D:\Work\workspace\cloud\cloud-starter\cloud-tenant-starter\src\main\java\com\xxxJppp\cloud\tenant\service" />
+      <recent name="D:\Work\workspace\cloud\cloud-starter\cloud-tenant-starter" />
+      <recent name="D:\Work\workspace\cloud\cloud-demo\cloud-demo-tenant\src\main\resources" />
+      <recent name="D:\Work\workspace\cloud\cloud-starter\cloud-data-starter\src\main\java\com\xxxJppp\cloud\data\properties" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xxxJppp.cloud.tenant.strategy" />
+      <recent name="com.xxxJppp.cloud.demo.tenant" />
+      <recent name="com.xxxJppp.cloud.tenant.mybatis" />
+      <recent name="com.xxxJppp.cloud.tenant.datasource" />
+      <recent name="com.xxxJppp.cloud.tenant.configuration" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Work\workspace\cloud\cloud-business\cloud-business-admin\src\main\resources\mapper" />
       <recent name="D:\Work\workspace\cloud\cloud-gen\src\main\resources\vm\xml" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.xxxJppp.cloud.auth.controller" />
-      <recent name="com.xxxJppp.cloud.auth.annotation" />
-      <recent name="com.xxxJppp.cloud.auth.serializer" />
-      <recent name="com.xxxJppp.cloud.auth.handler" />
-      <recent name="com.xxxJppp.auth.controller" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Work\workspace\cloud\cloud-gateway\src\main\java\com\xxxJppp\cloud\gateway" />
-      <recent name="D:\Work\workspace\cloud\cloud-starter\cloud-auth-starter\src\main\java\com\xxxJppp\cloud\auth" />
-      <recent name="D:\Work\workspace\cloud\cloud-business\cloud-business-admin\src\main\java\com\xxxJppp\cloud\business\admin" />
-      <recent name="D:\Work\workspace\cloud\cloud-auth\src\main\java\com\xxxJppp\cloud\auth\config" />
-      <recent name="D:\Work\workspace\cloud\cloud-authcopy\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -304,7 +455,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AuthorizationServerConfiguration">
+  <component name="RunManager" selected="Spring Boot.DemoTenantApplication">
     <configuration name="AuthorizationServerConfiguration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xxxJppp.cloud.auth.configuration.AuthorizationServerConfiguration" />
       <module name="cloud-auth" />
@@ -357,6 +508,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoTenantApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-demo-tenant" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xxxJppp.cloud.demo.tenant.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xxxJppp.cloud.demo.tenant.DemoTenantApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xxxjppp.cloud.eureka.EurekaApplication" />
@@ -364,36 +528,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UcBizApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-uc-biz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xxxJppp.cloud.uc.biz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xxxJppp.cloud.uc.biz.UcBizApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.AuthorizationServerConfiguration" />
       <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.CloudGatewayApplication" />
       <item itemvalue="Spring Boot.CloudAuthApplication" />
-      <item itemvalue="Spring Boot.UcBizApplication" />
       <item itemvalue="Spring Boot.BusinessAdminApplication" />
-      <item itemvalue="Application.AuthorizationServerConfiguration" />
+      <item itemvalue="Spring Boot.DemoTenantApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.DemoTenantApplication" />
         <item itemvalue="Spring Boot.CloudGatewayApplication" />
         <item itemvalue="Spring Boot.CloudAuthApplication" />
         <item itemvalue="Spring Boot.BusinessAdminApplication" />
         <item itemvalue="Application.AuthorizationServerConfiguration" />
-        <item itemvalue="Spring Boot.UcBizApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\JYSY\AppData\Roaming\Subversion</configuration>
@@ -412,37 +566,39 @@
       <workItem from="1593141819460" duration="43076000" />
       <workItem from="1593425021465" duration="98493000" />
       <workItem from="1593741854081" duration="19713000" />
-      <workItem from="1593827921105" duration="71275000" />
+      <workItem from="1593827921105" duration="83435000" />
+      <workItem from="1594950984408" duration="93082000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="392965000" />
+    <option name="totallyTimeSpent" value="498207000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49591836" visible="true" weight="0.30898124" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.494" visible="true" weight="0.31300268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5040816" side_tool="true" weight="0.3016086" />
+      <window_info id="Favorites" order="6" sideWeight="0.506" side_tool="true" weight="0.31300268" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="MyBatis Log" order="0" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="1" visible="true" weight="0.29278642" />
+      <window_info anchor="bottom" id="Run Dashboard" order="1" visible="true" weight="0.28895184" />
       <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32956153" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.32956153" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.3286119" />
+      <window_info anchor="bottom" id="Find" order="4" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="5" weight="0.32956153" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32956153" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32956153" />
-      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Spring" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
@@ -476,392 +632,414 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.3.3.RELEASE/spring-security-web-5.3.3.RELEASE.jar!/org/springframework/security/web/server/authentication/AuthenticationWebFilter.class">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/aspect/DynamicDataSourceAspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        <state relative-caret-position="231">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.3.3.RELEASE/spring-security-config-5.3.3.RELEASE.jar!/org/springframework/security/config/web/server/SecurityWebFiltersOrder.class">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-redis-starter/src/main/java/com/xxxJppp/cloud/redis/repository/RedisService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="833">
+          <caret line="56" column="31" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/handler/Oauth2AuthSuccessHandler.java">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-redis-starter/src/main/java/com/xxxJppp/cloud/redis/repository/RedisRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.3.3.RELEASE/spring-security-web-5.3.3.RELEASE.jar!/org/springframework/security/web/server/authentication/ServerAuthenticationEntryPointFailureHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.jar!/org/springframework/http/codec/ServerCodecConfigurer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.3.6.RELEASE/reactor-core-3.3.6.RELEASE.jar!/reactor/core/publisher/Mono.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="28" />
           <folding>
-            <element signature="e#2964#2965#0" expanded="true" />
-            <element signature="e#3019#3020#0" expanded="true" />
+            <element signature="e#2923#2924#0" expanded="true" />
+            <element signature="e#2982#2983#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webflux/5.2.7.RELEASE/spring-webflux-5.2.7.RELEASE.jar!/org/springframework/web/reactive/function/server/ServerResponse.class">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-redis-starter/src/main/java/com/xxxJppp/cloud/redis/RedisAutoConfigure.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state relative-caret-position="272">
+          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.jar!/org/springframework/boot/autoconfigure/web/reactive/error/AbstractErrorWebExceptionHandler.class">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-redis-starter/src/main/java/com/xxxJppp/cloud/redis/serializer/RedisObjectSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="80" column="34" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+        <state relative-caret-position="272">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/error/GlobalErrorWebExceptionHandler.java">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/servlet/TenantWebMvcConfigurer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="350">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/servlet/TenantContextHandlerInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/error/GlobalErrorAttributes.java">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/mapper/TenantDataSourceMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="238">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/service/ITenantDataSourceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Throwable.java">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/service/DefaultTenantDataSourceService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+        <state relative-caret-position="476">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
-            <element signature="e#15711#15712#0" expanded="true" />
-            <element signature="e#15747#15748#0" expanded="true" />
-            <element signature="e#16192#16193#0" expanded="true" />
-            <element signature="e#16227#16228#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.jar!/org/springframework/boot/web/reactive/error/ErrorWebExceptionHandler.class">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/utils/DataSourceUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.jar!/org/springframework/boot/web/reactive/error/ErrorAttributes.class">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/model/TenantDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="255">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.jar!/org/springframework/boot/autoconfigure/condition/SearchStrategy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/CloudGatewayApplication.java">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/DynamicDataSourceContextHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1170#1171#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/component/BaseRemoteTokenServices.java">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/DynamicDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1233">
-          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+        <state relative-caret-position="846">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/mapper/SysMenuMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/datasource/DynamicDataSourceSummoner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/common/exceptions/ClientAuthenticationException.class">
+    <entry file="file://$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/controller/SysRoleMenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+        <state relative-caret-position="-684">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/common/exceptions/InvalidTokenException.class">
+    <entry file="file://$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/controller/SysMenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="57" lean-forward="true" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        <state relative-caret-position="221">
+          <caret line="26" column="55" lean-forward="true" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.jar!/org/springframework/http/HttpStatus.class">
+    <entry file="file://$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/controller/SysLogininforController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="80" column="25" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="25" />
+        <state relative-caret-position="-97">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/auth/CustomAuthenticationManager.java">
+    <entry file="file://$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/controller/SysDictTypeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="158">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/error/CustomErrorWebFluxAutoConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/controller/SysDictDataController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+        <state relative-caret-position="158">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/controller/SysDeptController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/controller/SysConfigController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/controller/MemBaseinfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/model/Result.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="234">
+          <caret line="64" column="25" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/common/exceptions/OAuth2Exception.class">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/utils/BizAssert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-97">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/exception/BaseAuth2Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/serializer/BaseAuth2ExceptionSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-auth/src/main/java/com/xxxJppp/cloud/auth/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-auth/src/main/java/com/xxxJppp/cloud/auth/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-auth/src/main/java/com/xxxJppp/cloud/auth/controller/TokenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-auth-starter/src/main/java/com/xxxJppp/cloud/auth/annotation/EnableCloudOauth2Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-auth/src/main/java/com/xxxJppp/cloud/auth/CloudAuthApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-auth/src/main/java/com/xxxJppp/cloud/auth/handler/AuthenticationFailureEvenHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-auth/src/main/java/com/xxxJppp/cloud/auth/configuration/AuthorizationServerConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="272">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="22" />
           <folding>
-            <element signature="e#4345#4346#0" expanded="true" />
-            <element signature="e#4407#4408#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-business/cloud-business-admin/src/main/java/com/xxxJppp/cloud/business/admin/controller/MemLoginController.java">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/configuration/DynamicDataSourceConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/10.10.1/feign-core-10.10.1.jar!/feign/codec/DecodeException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-auth/src/main/java/com/xxxJppp/cloud/auth/config/ExceptionAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-auth/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/config/ResourceServerConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+        <state relative-caret-position="183">
+          <caret line="32" column="60" lean-forward="true" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/utils/ResponseUtil.java">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/datasource/BaseDatabaseConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
-          <caret line="125" column="29" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
+          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/enums/ResultEnum.java">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/datasource/MasterDatabaseConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="149">
+          <caret line="51" column="67" lean-forward="true" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
           <folding>
-            <element signature="e#1824#1825#0" expanded="true" />
-            <element signature="e#1854#1855#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/error/JsonErrorWebExceptionHandler.java">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/configuration/AuthorityDatabaseAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="68">
+          <caret line="49" column="69" selection-start-line="49" selection-start-column="69" selection-end-line="49" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/auth/JsonAuthenticationEntryPoint.java">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-data-starter/src/main/java/com/xxxJppp/cloud/data/datasource/BaseMybatisConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="149">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/configuration/AuthorityMybatisAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/config/DefaultExceptionAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/exception/BaseException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/exception/MessageException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/exception/BusinessException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/constant/CommonConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="992">
+          <caret line="161" column="10" lean-forward="true" selection-start-line="161" selection-start-column="10" selection-end-line="161" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-common-starter/src/main/java/com/xxxJppp/cloud/common/constant/StrPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1310">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="248">
+            <caret line="35" column="24" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5.jar!/org/apache/ibatis/jdbc/ScriptRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/mapper/InitDbMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/properties/TenantProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-259">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/model/Tenant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/strategy/InitSystemStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/strategy/SchemaInitSystemStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2363">
+          <caret line="158" column="59" selection-start-line="158" selection-start-column="59" selection-end-line="158" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/strategy/ColumnInitSystemStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/auth/CustomAuthenticationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/auth/AccessManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/swagger/SwaggerProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-431">
+        <state relative-caret-position="-412">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.jar!/org/springframework/http/MediaType.class">
+    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/src/main/java/com/xxxJppp/cloud/tenant/strategy/InitSystemContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        <state relative-caret-position="119">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/handler/SwaggerUiHandler.java">
+    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        <state relative-caret-position="136">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/handler/SwaggerSecurityHandler.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/handler/SwaggerResourceHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-gateway/src/main/java/com/xxxJppp/cloud/gateway/swagger/SwaggerAggProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-starter/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-starter/cloud-redis-starter/src/main/java/com/xxxJppp/cloud/redis/lock/RedisDistributedLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#3784#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="374">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -915,7 +1093,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>cloud-auth</last-edited>
+          <last-edited>cloud-demo-tenant</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

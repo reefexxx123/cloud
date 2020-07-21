@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xxxJppp.cloud.common.model.SecurityUser;
+import com.xxxJppp.cloud.uc.api.domain.MemLoginDTO;
 import com.xxxJppp.cloud.uc.biz.dao.MemLoginMapper;
 import com.xxxJppp.cloud.uc.api.entity.MemLogin;
 import com.xxxJppp.cloud.uc.biz.service.IMemLoginService;
@@ -29,15 +30,16 @@ import java.util.stream.Collectors;
  */
 @Service
 public class MemLoginServiceImpl extends ServiceImpl<MemLoginMapper, MemLogin> implements IMemLoginService {
-
+    @Autowired
+    private ISysRoleService roleService;
     @Autowired
     private ISysPermissionService permissionService;
 
     @Override
     public MemLogin findByUserName(String username) {
-        LambdaQueryWrapper<MemLogin> queryWrapper = new LambdaQueryWrapper<>();
-        queryWrapper.eq(MemLogin::getLoginname,username);
-        return getOne(queryWrapper);
+        LambdaQueryWrapper<MemLogin> select = Wrappers.<MemLogin>lambdaQuery();
+        select.eq(MemLogin::getLoginname,username);
+        return getOne(select);
     }
 
     @Override
@@ -51,6 +53,7 @@ public class MemLoginServiceImpl extends ServiceImpl<MemLoginMapper, MemLogin> i
 
     @Override
     public SecurityUser findUserInfo(MemLogin user) {
+        boolean isAdmin = roleService.isAdmin(user.getId());
         // 权限集合
         // 角色集合
         Set<String> roles = permissionService.getRolePermission(user.getId());
@@ -61,6 +64,12 @@ public class MemLoginServiceImpl extends ServiceImpl<MemLoginMapper, MemLogin> i
 
         BeanUtil.copyProperties(user, securityUser);
         securityUser.setAccno(user.getAccno());
+        securityUser.setAdmin(isAdmin);
         return securityUser;
+    }
+
+    @Override
+    public MemLoginDTO findUserInfoByUesrId(Long userId) {
+        return baseMapper.getUserByUserName(userId);
     }
 }

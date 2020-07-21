@@ -17,8 +17,6 @@ import java.util.Random;
  */
 public abstract class BaseController {
 
-    /** ============================     requset    =================================================  */
-
     /**
      * 获取当前请求对象
      *

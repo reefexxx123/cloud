@@ -147,4 +147,19 @@ public interface CommonConstant {
      * 验证码有效期（秒）
      */
     Integer CAPTCHA_EXPIRATION = 2*60;
+
+    /**
+     * 默认数据源名称，与.yml的默认数据源id保持一致
+     */
+    String DEFAULT_DATA_SOURCE_BEAN_KEY = "master";
+
+    /**
+     * 默认租户编号
+     */
+    String DEFAULT_DATA_SOURCE_TENANT = "0000";
+
+    /**
+     * 基础库
+     */
+    String DEFAULT_DATA_BASE_DATABASE = "zuihou_base";
 }

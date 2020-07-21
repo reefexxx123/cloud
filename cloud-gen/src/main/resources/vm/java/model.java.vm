@@ -1,6 +1,9 @@
 package ${packageName}.model;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.EqualsAndHashCode;
@@ -22,18 +25,24 @@ import com.xxxJppp.cloud.common.base.BaseEntity;
 public class ${ClassName} extends BaseEntity {
     private static final long serialVersionUID=1L;
 
-    #foreach ($column in $columns)
-    #if(!$column.superColumn)
-    /** $column.columnComment */
-    #if($column.list)
-    #set($parentheseIndex=$column.columnComment.indexOf("（"))
-    #if($parentheseIndex != -1)
-    #set($comment=$column.columnComment.substring(0, $parentheseIndex))
-    #else
-    #set($comment=$column.columnComment)
-    #end
-    #end
+#foreach ($column in $columns)
+#if(!$column.superColumn)
+/** $column.columnComment */
+#if($column.list)
+#set($parentheseIndex=$column.columnComment.indexOf("（"))
+#if($parentheseIndex != -1)
+#set($comment=$column.columnComment.substring(0, $parentheseIndex))
+#else
+#set($comment=$column.columnComment)
+#end
+#if($column.javaType == 'Date')
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+#end
+#if($column.columnName == $pkColumn.columnName)
+    @TableId(value = "$pkColumn.columnName",type = IdType.INPUT)
+#end
+#end
     private $column.javaType $column.javaField;
-    #end
-    #end
+#end
+#end
 }

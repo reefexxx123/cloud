@@ -1,0 +1,57 @@
+server:
+  port: 9702
+  http2:
+    enabled: true
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: cloud-uc-center
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://${CLOUD-MYSQL-HOST:localhost}:${CLOUD-NACOS-PORT:3306}/cloud_defaults?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2b8
+    username: ${CLOUD-MYSQL-USERNAME:root}
+    password: ${CLOUD-MYSQL-PASSWORD:root}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      connection-test-query: SELECT 1
+      max-lifetime: 120000
+      maximum-pool-size: 15
+      minimum-idle: 3
+      connection-timeout: 30000
+      idle-timeout: 30000
+      auto-commit: true
+      pool-name: DatebookHikariCP
+  redis:
+    host: ${CLOUD-REDIS-HOST:localhost}
+    port: ${CLOUD-REDIS-PORT:6379}
+    password: ${CLOUD-REDIS-PASSWORD:}
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  typeAliasesPackage: com.xxxJppp.cloud.uc.api.entity
+  global-config:
+    db-config:
+      id-type: auto
+      table-underline: true
+      field-strategy: NOT_NULL
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+cloud:
+  data:
+    isBlockAttack: true
+  tenant:
+    enabled: false

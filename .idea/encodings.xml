@@ -3,18 +3,19 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-auth" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-authcopy" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-business" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-business/cloud-business-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-demo/cloud-demo-tenant" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-gen" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-oauth" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-starter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-starter/cloud-auth-starter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-starter/cloud-common-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-starter/cloud-data-starter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-starter/cloud-redis-starter" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-starter/cloud-security-starter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-starter/cloud-swagger-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-uc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-uc/cloud-uc-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-uc/cloud-uc-biz" charset="UTF-8" />

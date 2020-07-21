@@ -25,6 +25,7 @@
         <module>cloud-gateway</module>
         <module>cloud-business</module>
         <module>cloud-gen</module>
+        <module>cloud-demo</module>
     </modules>
 
     <dependencyManagement>

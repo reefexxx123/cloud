@@ -2,6 +2,7 @@ package com.xxxJppp.cloud.uc.biz.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.xxxJppp.cloud.common.model.SecurityUser;
+import com.xxxJppp.cloud.uc.api.domain.MemLoginDTO;
 import com.xxxJppp.cloud.uc.api.entity.MemLogin;
 
 import java.util.Set;
@@ -22,4 +23,5 @@ public interface IMemLoginService extends IService<MemLogin> {
 
     SecurityUser findUserInfo(MemLogin user);
 
+    MemLoginDTO findUserInfoByUesrId(Long user);
 }

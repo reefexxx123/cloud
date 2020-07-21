@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.xxxJppp.cloud.tenant.configuration.DynamicDataSourceConfiguration,\
+  com.xxxJppp.cloud.tenant.configuration.AuthorityDatabaseAutoConfiguration,\
+  com.xxxJppp.cloud.tenant.configuration.AuthorityMybatisAutoConfiguration

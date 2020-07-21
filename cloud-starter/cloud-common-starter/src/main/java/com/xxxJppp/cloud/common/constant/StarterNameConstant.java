@@ -11,6 +11,11 @@ public interface StarterNameConstant {
      * 认证模块
      */
     String CLOUD_AUTH_STARTER = "cloud-auth-starter";
+
+    /**
+     * 数据模块
+     */
+    String CLOUD_DATA_STARTER = "cloud-data-starter";
     /**
      * swagger模块
      */

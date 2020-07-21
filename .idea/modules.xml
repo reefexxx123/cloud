@@ -10,11 +10,15 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-business/cloud-business.iml" filepath="$PROJECT_DIR$/cloud-business/cloud-business.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-business/cloud-business-admin/cloud-business-admin.iml" filepath="$PROJECT_DIR$/cloud-business/cloud-business-admin/cloud-business-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-starter/cloud-common-starter/cloud-common-starter.iml" filepath="$PROJECT_DIR$/cloud-starter/cloud-common-starter/cloud-common-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-starter/cloud-data-starter/cloud-data-starter.iml" filepath="$PROJECT_DIR$/cloud-starter/cloud-data-starter/cloud-data-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-demo/cloud-demo.iml" filepath="$PROJECT_DIR$/cloud-demo/cloud-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-demo/cloud-demo-tenant/cloud-demo-tenant.iml" filepath="$PROJECT_DIR$/cloud-demo/cloud-demo-tenant/cloud-demo-tenant.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-gateway/cloud-gateway.iml" filepath="$PROJECT_DIR$/cloud-gateway/cloud-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-gen/cloud-gen.iml" filepath="$PROJECT_DIR$/cloud-gen/cloud-gen.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-starter/cloud-redis-starter/cloud-redis-starter.iml" filepath="$PROJECT_DIR$/cloud-starter/cloud-redis-starter/cloud-redis-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-starter/cloud-starter.iml" filepath="$PROJECT_DIR$/cloud-starter/cloud-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-starter/cloud-swagger-starter/cloud-swagger-starter.iml" filepath="$PROJECT_DIR$/cloud-starter/cloud-swagger-starter/cloud-swagger-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/cloud-tenant-starter.iml" filepath="$PROJECT_DIR$/cloud-starter/cloud-tenant-starter/cloud-tenant-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-uc/cloud-uc.iml" filepath="$PROJECT_DIR$/cloud-uc/cloud-uc.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-uc/cloud-uc-api/cloud-uc-api.iml" filepath="$PROJECT_DIR$/cloud-uc/cloud-uc-api/cloud-uc-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-uc/cloud-uc-biz/cloud-uc-biz.iml" filepath="$PROJECT_DIR$/cloud-uc/cloud-uc-biz/cloud-uc-biz.iml" />

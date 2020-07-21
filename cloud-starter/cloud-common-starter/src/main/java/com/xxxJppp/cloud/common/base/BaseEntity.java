@@ -1,11 +1,13 @@
 package com.xxxJppp.cloud.common.base;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import java.io.Serializable;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -15,9 +17,14 @@ import java.util.Map;
  *
  * @author xxxJppp
  */
-public class BaseEntity extends Model{
+@Data
+@EqualsAndHashCode(callSuper = true)
+public class BaseEntity<T extends Model<?>> extends Model<T>{
     private static final long serialVersionUID = 1L;
-
+    public static final String CREATE_TIME = "createTime";
+    public static final String CREATE_USER = "createBy";
+    public static final String UPDATE_TIME = "updateTime";
+    public static final String UPDATE_USER = "updateBy";
     /**
      * 搜索值
      */
@@ -33,6 +40,7 @@ public class BaseEntity extends Model{
      * 创建时间
      */
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @TableField(fill = FieldFill.INSERT)
     private Date createTime;
 
     /**
@@ -44,6 +52,7 @@ public class BaseEntity extends Model{
      * 更新时间
      */
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
     /**
@@ -71,70 +80,6 @@ public class BaseEntity extends Model{
     @TableField(exist = false)
     private Map<String, Object> params;
 
-    public String getSearchValue() {
-        return searchValue;
-    }
-
-    public void setSearchValue(String searchValue) {
-        this.searchValue = searchValue;
-    }
-
-    public String getCreateBy() {
-        return createBy;
-    }
-
-    public void setCreateBy(String createBy) {
-        this.createBy = createBy;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
-    public String getUpdateBy() {
-        return updateBy;
-    }
-
-    public void setUpdateBy(String updateBy) {
-        this.updateBy = updateBy;
-    }
-
-    public Date getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
-    }
-
-    public String getRemark() {
-        return remark;
-    }
-
-    public void setRemark(String remark) {
-        this.remark = remark;
-    }
-
-    public String getBeginTime() {
-        return beginTime;
-    }
-
-    public void setBeginTime(String beginTime) {
-        this.beginTime = beginTime;
-    }
-
-    public String getEndTime() {
-        return endTime;
-    }
-
-    public void setEndTime(String endTime) {
-        this.endTime = endTime;
-    }
-
     public Map<String, Object> getParams() {
         if (params == null) {
             params = new HashMap<>();
@@ -142,7 +87,4 @@ public class BaseEntity extends Model{
         return params;
     }
 
-    public void setParams(Map<String, Object> params) {
-        this.params = params;
-    }
 }
