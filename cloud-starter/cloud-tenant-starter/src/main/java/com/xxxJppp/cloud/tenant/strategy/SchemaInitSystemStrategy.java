@@ -57,7 +57,10 @@ public class SchemaInitSystemStrategy implements InitSystemStrategy {
 
     @Override
     public boolean init(String tenant) {
+
+        //创建数据库
         this.initDatabases(tenant);
+        //创建数据表
         this.initTables(tenant);
 
         this.initData(tenant);

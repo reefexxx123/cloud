@@ -9,6 +9,7 @@ import com.xxxJppp.cloud.tenant.properties.TenantProperties;
 import com.zaxxer.hikari.HikariDataSource;
 import lombok.extern.slf4j.Slf4j;
 import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -27,7 +28,7 @@ import java.util.Map;
 @MapperScan("com.xxxJppp.cloud.tenant.mapper")
 @ComponentScan(basePackages = {"com.xxxJppp.cloud.tenant.service"})
 @EnableConfigurationProperties(value = {TenantProperties.class, DataSourceProperties.class})
-//@ConditionalOnExpression("'DATASOURCE'.equals('${cloud.tenant.multiTenantType}')")
+@ConditionalOnExpression("'DATASOURCE'.equals('${cloud.tenant.multiTenantType}')")
 public class DynamicDataSourceConfiguration {
 
     private final DataSourceProperties dataSourceProperties;

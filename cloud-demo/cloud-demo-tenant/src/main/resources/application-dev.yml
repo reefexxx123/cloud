@@ -52,6 +52,7 @@ mybatis-plus:
 
 cloud:
   data:
+    database: cloud_defaults
     isBlockAttack: true
   tenant:
     enabled: false
