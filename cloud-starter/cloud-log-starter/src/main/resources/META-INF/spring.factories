@@ -1,0 +1,5 @@
+org.springframework.context.ApplicationContextInitializer=\
+com.xxxJppp.cloud.log.initializer.TtlMDCAdapterInitializer
+
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.xxxJppp.cloud.log.LogAutoConfiguration, \

@@ -18,6 +18,7 @@
         <module>cloud-redis-starter</module>
         <module>cloud-tenant-starter</module>
         <module>cloud-data-starter</module>
+        <module>cloud-log-starter</module>
     </modules>
 
 </project>

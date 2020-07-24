@@ -8,10 +8,12 @@ import lombok.experimental.UtilityClass;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.oauth2.provider.OAuth2Authentication;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * 安全工具类
@@ -75,4 +77,17 @@ public class SecurityUtils {
         return roleIds;
     }
 
+    public String getUserId() {
+        SecurityUser user = getUser();
+        return Objects.isNull(user) ? "" : String.valueOf(user.getUserId());
+    }
+
+    public String getClientId() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        if (authentication instanceof OAuth2Authentication) {
+            OAuth2Authentication auth2Authentication = (OAuth2Authentication) authentication;
+            return auth2Authentication.getOAuth2Request().getClientId();
+        }
+        return null;
+    }
 }

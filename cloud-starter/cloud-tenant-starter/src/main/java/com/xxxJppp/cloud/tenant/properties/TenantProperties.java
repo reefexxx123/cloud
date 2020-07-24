@@ -15,7 +15,7 @@ import static com.xxxJppp.cloud.common.enums.MultiTenantTypeEnum.SCHEMA;
 /**
  * 多租户配置
  *
- * @author dengtao
+ * @author xxxJppp
  * @date 2020/5/2 11:19
 */
 @Slf4j

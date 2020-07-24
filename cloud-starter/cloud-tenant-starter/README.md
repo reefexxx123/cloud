@@ -22,7 +22,7 @@ cloud:
 有4个选项：
 1.NONE：非租户模式
 2.COLUMN：字段模式
-3.SCHEMA：独立schema模式
+3.SCHEMA：独立schema模式 MYSQL schema和database一样的
 4.DATASOURCE：独立数据源模式
 
 # 4个sql脚本的区别：
@@ -51,3 +51,4 @@ cloud:
 1. 创建数据库： cloud_defaults 和 cloud_base_0000
 2. 向 cloud_defaults 库导入 cloud_defaults.sql 
 3. 向 cloud_base_0000 库导入 cloud_base_0000.sql 
+
